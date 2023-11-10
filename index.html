@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades da Física</title>
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/responsivo.css">
+    <link rel="stylesheet" href="./css/principal.css">
+    <link rel="stylesheet" href="./css/paginainicial.css">
+    <link rel="stylesheet" href="./css/botoes.css">
+    <link rel="stylesheet" href="./css/dualidade.css">
+    <link rel="stylesheet" href="./css/galileu.css">
+    <link rel="stylesheet" href="./css/tempo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+
+    <main>
+
+        <section class="pagina" id="pagina_inicial">
+
+            <h1 id="tituloinicial">Bem vindo ao curiosidades da Física!</h1>
+
+            <div id="boxintroducao">
+
+            <p id="introducao">Bem-vindo ao mundo fascinante das "Curiosidades da Física"! Aqui, convidamos você a
+                explorar os mistérios e maravilhas que permeiam o universo da física, desvendando conceitos intrigantes
+                e fenômenos que desafiam a intuição.
+            </p>
+
+            </div>
+            
+            <div class="containerbotoes">
+
+                <button class="botao" id="foton" type="button" data-alvo="boxdualiade_onda_particula">
+                    <p class="pergunta" id="ondaparticula">
+                        O que é a luz, onda ou partícula?
+                    </p>
+                    <img class="imagembotao" src="./img/foton.png" alt="foton">
+                </button>
+
+                <button class="botao" id="galileu" type="button" data-alvo="boxquem_chega_primeiro">
+                    <p class="perguntameio" id="quedalivre">
+                        Quem chega primeiro ao chão, uma bola de boliche ou uma pena?
+                    </p>
+                    <img class="imagembotao" src="./img/galileu.png" alt="galileu">
+                </button>
+
+                <button class="botao" id="tempo" type="button" data-alvo="viagem_no_tempo">
+                    <p class="pergunta" id="viagem">
+                        É possível viajar no tempo?
+                    </p>
+                    <img class="imagembotao" src="./img/viagemnotempo.png" alt="tempo">
+                </button>
+
+            </div>
+
+            <img id="fundoInicial" src="./img/fundoprincipal.png" alt="fundoprincipal">
+
+        </section>
+
+
+        <section class="pagina" id="boxdualiade_onda_particula">
+
+            <h1 id="tituloDualidade">Você já ouviu falar em dualidade Onda-Partícula?</h1>
+
+            <div id="boxIntroducaoDualidade">
+                <img class="colunaInt" src="./img/ondas.png" alt="ondas">
+                <p class="colunaInt" id="textoIntroducao">Você já se perguntou o que é luz? </br>
+                    Como algo aparentemente tão simples e familiar pode ser objeto de um dos debates mais
+                    fascinantes na história da ciência? </br>
+                    A resposta está na dualidade intrigante que envolve a natureza da luz: </br>
+                    <strong>será ela uma onda fluindo e se espalhando pelo espaço, ou uma série de minúsculas
+                        partículas viajando em linha reta?</strong> </br>
+                    Vamos mergulhar nesse intrigante debate entre <strong>Christiann Huygens e Isaac
+                        Newton</strong>, para desvendar as bases de seus pontos de vista e as implicações que essas
+                    teorias tiveram no nosso entendimento da luz. <br>
+                    Prepare-se para uma jornada pelo coração da dualidade onda-partícula na natureza da luz!
+                </p>
+                <img class="colunaInt" src="./img/fotons.png" alt="fotons">
+            </div>
+        
+            <div id="boxPersonagens">
+
+                <img id="imgHuygens" class="colunaPersonagem" src="./img/caricHuygens-PhotoRoom.png-PhotoRoom.png" alt="huygens">
+                <p class="colunaPersonagem"><strong>Huygens: </strong>(Com entusiasmo) Senhor Newton, é uma honra
+                    poder discutir com um intelecto tão
+                    ilustre como o seu. Permita-me iniciar: a luz, caro amigo, é uma onda, uma perturbação que
+                    se propaga através do espaço. Isso é evidenciado pela difração e interferência observadas em
+                    inúmeros experimentos.</p>
+                <img id="imgNewton" class="colunaPersonagem" src="./img/caricNewton-PhotoRoom.png-PhotoRoom.png" alt="newton">
+                <p class="colunaPersonagem"><strong>Newton: </strong>(Sorrindo) Senhor Huygens, o prazer é meu. No
+                    entanto, devo discordar.
+                    A luz é composta de partículas minúsculas, como bem demonstra o experimento com o prisma,
+                    onde a luz branca é decomposta em suas cores constituintes.</p>
+
+            </div>
+
+            <div id="boxDebate">
+
+                <p></p>
+                <p class="falaHuygens"><strong>Huygens: </strong>(Levantando-se) Por favor, considere o experimento das duas fendas. Ao deixar 
+                    a luz passar por aberturas estreitas, observamos padrões de interferência característicos de ondas.
+                        Como explicar isso com uma visão corpuscular?</p>
+                <p></p>
+                <p class="falaNewton"><strong>Newton: </strong>(Ponderando) De fato, esse experimento é intrigante. No entanto, o fenômeno pode 
+                    ser explicado se considerarmos que as partículas de luz se comportam de maneira probabilística, 
+                    concentrando-se em certas áreas.</p>
+                <p></p>
+                <p class="falaHuygens"><strong>Huygens: </strong>(Retomando a palavra) E quanto à difração? Quando a luz encontra uma borda ou uma 
+                    fenda, ela se curva em torno dela, comportamento típico de uma onda. Isso não é algo que possa ser 
+                    facilmente reconciliado com uma abordagem corpuscular.</p>
+                <p></p>
+                <p class="falaNewton"><strong>Newton: </strong>Newton: (Refletindo) Concordo que a difração é um fenômeno intrigante. No entanto,
+                        talvez possamos conceber partículas de luz que, em determinadas circunstâncias, exibem esse 
+                        comportamento aparentemente ondulatório.</p>
+                <p></p>
+                <p class="falaHuygens"><strong>Huygens: </strong>(Sorrindo) Compreendo seu ponto de vista, senhor Newton. No entanto, devo lembrar
+                        que as leis de refração e reflexão podem ser elegantemente derivadas a partir do princípio de 
+                        Huygens, reforçando a perspectiva ondulatória.</p>
+                <p></p>
+                <p class="falaNewton"><strong>Newton: </strong>(Respeitosamente) Sem dúvida, senhor Huygens, suas contribuições são notáveis. 
+                    No entanto, a teoria corpuscular também oferece explicações robustas para esses fenômenos.</p>
+
+            </div>
+
+            <div id="reflexaoBohr">
+                <img id="imgBohr" src="./img/Bohr-PhotoRoom.png-PhotoRoom.png" alt="nielsBohr">
+                <p><strong>Niels Bohr:</strong><br><br>
+                    É fascinante observar como o debate entre Huygens e Newton moldou nosso entendimento da luz. 
+                    De fato, Huygens trouxe à tona a elegância das ondas, destacando a difração e a interferência. 
+                    Sua teoria certamente possui uma beleza intrínseca, uma visão unificada do fenômeno luminoso. <br><br>
+                    No entanto, a perspectiva de Newton ganha força com os experimentos cruciais de <strong>Planck e Einstein 
+                    </strong>revelando que a luz também possui uma faceta corpuscular inegável, com evidências palpáveis e 
+                    inquestionáveis.
+                </p>
+                <p>(Mantendo um tom ponderado) Chegamos, assim, ao cerne do paradoxo: a dualidade onda-partícula. 
+                    <strong>A luz não pode ser confinada a uma única interpretação.</strong> É uma entidade que se revela em 
+                    múltiplas facetas, dependendo do contexto experimental. <strong>Este é o princípio da complementaridade</strong>, que 
+                    postula que tanto o caráter ondulatório quanto o corpuscular são intrínsecos à natureza da luz. <br><br>
+                    (Concluindo com um sorriso) Somente ao abraçar essa dualidade podemos apreciar plenamente a 
+                    riqueza e complexidade do universo que nos cerca. É um convite à contemplação, à aceitação da 
+                    ambiguidade e, acima de tudo, à busca contínua pelo entendimento mais profundo do 
+                    que nos envolve.</p>
+            </div> 
+
+        </section>
+        
+
+        <section class="pagina" id="boxquem_chega_primeiro">
+
+            <h1 id="titulo"><strong>Quem chega Primeiro?</strong></h1>
+
+            <div id="boxIntroducaoQuedaLivre">
+                <img id="imgGalileu" src="./img/retrato-de-galileu-galilei-em-estilo-cartoon.png" alt="galileu"> 
+                <p id="textoIntroducaoQueda">A compreensão da queda livre começou a ser moldada nos tempos de Galileu Galilei, um dos pioneiros da física moderna. Galileu percebeu que todos os objetos, independentemente de sua massa, caem com a mesma aceleração na ausência de resistência do ar. Suas observações pavimentaram o caminho para uma compreensão mais profunda da mecânica.</p>
+            </div>                
+            <div id="box2">
+                <p id="texto2"><strong>Galileu e a Lei da Queda dos Corpos: </strong>Galileu foi o primeiro a realizar 
+                    experimentos sistemáticos sobre a queda dos corpos. Conta-se uma história (não se sabe se é verídica), 
+                    que ele subiu na Torre Inclinada de Pisa e deixou cair objetos de diferentes massas e formatos, 
+                    constatando que todos chegavam ao solo ao mesmo tempo, desde que a resistência do ar fosse desconsiderada. 
+                    Essa observação desafiou as intuições da época, que acreditavam que objetos mais pesados deveriam cair 
+                    mais rapidamente. Galileu formulou a Lei da Queda dos Corpos, que estabelece que, na ausência de resistência 
+                    do ar, todos os objetos caem com a mesma aceleração devida à gravidade.
+                </p>
+                <img id="imgtorre" src="./img/galileu.png" alt="torre">
+            </div>
+            <div id="box3">
+                <img id="imgNewton" src="./img/caricNewton-PhotoRoom.png-PhotoRoom.png" alt="newton">
+                <p class="texto" id="texto3"><strong>Contribuição de Newton: </strong>As descobertas de Galileu foram 
+                    posteriormente consolidadas e ampliadas por Isaac Newton com o desenvolvimento das três leis 
+                    fundamentais do movimento e a teoria da gravitação universal. A Segunda Lei de Newton (F=m⋅a), em particular, 
+                    desempenha um papel crucial na compreensão da queda livre, relacionando a força resultante com a 
+                    aceleração de um objeto. Na queda-livre, quando desconsideramos a resistência do ar, a única força 
+                    atuante sobre o objeto é a gravidade, que gera uma aceleração constante de simplifica-se para a equação p=m⋅g, onde g é a aceleração devida à gravidade.
+                    aproximadamente 9,8 m/s<sup>2</sup> em direção ao centro da Terra. Portanto, a Segunda Lei de Newton 
+                </p>
+            </div>
+
+            <div id="box4">
+                <img class="imgBox5" id="bola" src="./img/boliche.png" alt="bola">
+                <p id="textoNovo"><strong> Desafiando a intuição</strong> </br><br>Aqui surge um fascinante 
+                    questionamento: se retirarmos completamente a resistência do ar, quem chegará primeiro ao chão,</br>
+                    <br><strong> uma bola de boliche 
+                    ou uma pena?</strong>
+                </p>
+                <img class="imgBox5" id="pena" src="./img/pena.png" alt="pena">
+            </div>
+
+
+            <div class="texto" id="boxConclusao">
+                <p id="textoConclusao">Nossa intuição muitas vezes nos diz que a bola de boliche, por ser mais pesada, 
+                    deveria atingir o solo primeiro. No entanto, isso não é o que a física nos revela. <br><br>
+                    Agora, levando em conta o raciocínio de Galileu e Newton, quem você acredita que chegaria primeiro 
+                    ao solo: <br> a bola de boliche ou a pena? <br></br>É um dilema intrigante que ilustra a beleza e a 
+                    surpresa da física que merece ser visto com os próprios olhos.<br><br>    
+                <strong>Não acredita? Então veja o vídeo abaixo.</strong>
+                </p>
+            </div>
+            
+            <div id="boxVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qSeW0f51QzY?si=Akkg8cVAMz_kBY5Z"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen id="video">
+                </iframe>
+            </div>
+
+        </section>
+
+        <section class="pagina" id="viagem_no_tempo">
+
+            <h1 id="tituloTempo"><strong>Viagem no tempo</strong></h1>
+
+            <div id="boxProblematizacao">
+                <strong>Será que é possível viajar no tempo? <br>
+                    Quem nunca sonhou em fazer uma viagem no tempo?</strong><br> 
+                    Parece coisa de filme, mas a Física nos reserva umas surpresas bem interessantes sobre isso, tudo graças à Teoria da Relatividade de Einstein.
+            </div>
+
+            <div id="boxRelatividade">
+                <p id="textoRelatividade">
+                    <strong> Teoria da Relatividade: Muda Tudo o que Sabemos sobre o Tempo.</strong> Acredite ou não, o tempo não é igual para todo mundo! Einstein mostrou que ele pode se esticar ou encolher, dependendo de quão rápido você está se movendo ou de quanta gravidade está ao seu redor. É como se o tempo fosse uma gelatina que pode se esticar e se moldar.
+                </p>
+                <img id="imgEinstein1" src="./img/Einstein.png" alt="Einstein">
+            </div>
+
+            <div style="text-align: center; font-family: Mate SC; font-size: 150%; margin-top: 1%;"><strong>CALMA!!! VAMOS EXPLICAR MELHOR. </strong></div>
+
+            <div id="boxLorentz">
+                <p class="textoLorentz">Imagine um astronauta que está viajando pelo espaço em uma nave. Dentro da nave existe um relógio de luz que emite um foton que é refletido por um espelho. O tempo é marcado a cada ida e volta do foton entre os espelhos. Na figura ao lado, a linha tracejada laranja representa a trajetória que o foton faz de um espelho a outro. Assim, na visão do nosso astronauta a trajetória que ele encherga do foton é uma linha reta na vertical. <br>A distância entre os espelhos é dada pelo produto da velocidade pelo tempo (d = v.t). Como o Foton viaja na velocidade da Luz (c) a distância entre os espelhos será dada por: <strong> d = c.t<sub>1</sub></strong> <br>O nosso astronauta será o observador 1, assim, seu tempo será identificado com t<sub>1</sub>.</p>
+                <img class="naves" src="./img/Observador1.PNG" alt="observador1">
+                
+                <img class="naves" src="./img/Observador2.PNG" alt="observador2">
+                <p class="textoLorentz">Imagine que na Terra, tem uma pessoa com super binóculos que lhe permite observar a nave em movimento. Diferentemente do Astronauta, nosso observador 2 irá enchegar uma trajetória diferente do foton. Como a nave está em movimento, a trajetória do Foton para o observador 2 será uma linha reta na diagonal. O tempo do observador 2 será dado por T<sub>2</sub>. A distância entre os espelhos, nesse caso, será dada por: <strong> d = c.t<sub>2</sub></strong>. Porém, aqui há outro aspecto que precisa ser observado. Perceba que do instante em que o Foton sai do espelho inferior e voltar para ele, a posição do espelho muda em relação ao observador 2 (para o astronauto isso não acontece), pois a nave está em movimento. A distância da posição incial do espelho inferior para a posição final será dada por: <strong> d = v.t<sub>2</sub>.</strong> Onde a velocidade (v) é a velocidade da nave. O tempo, nesse caso, é do observador 2 uma vez que somente ele observa essa mudança de posição.</p>
+                <p class="textoLorentz" id="textoLorentz1e2">Por fim, a figura ao lado representa as duas situações ao mesmo tempo. Onde a <strong>trajetória X</strong> é o movimento do Foton observado pelo Astronauta, a <strong>trajetória Z</strong> é o movimento do Foton observado pela pessoa na Terra e a <strong>trajetória Y</strong> é o movimento da nave também observado pela pessoa na Terra.</p>
+                <img class="naves" src="./img/Observador1e2.PNG" alt="observador1e2">
+
+            </div>
+
+            <div id="BoxExplicacao">
+                <p style="text-align: center; font-family: Mate SC; font-size: 150%; margin-top: 1%;"> <strong>OK!!! Entendi que cada observador enchergar uma trajetória diferente para o mesmo Foton. Mas o que tem isso com a viagem no tempo??? E pra quê essas fórmulas?!</strong></p>
+                <p style="text-align: center; font-family: Mate SC; font-size: 150%; margin-top: 1%;">Se olhar com atenção para a última figura, você verá que a junção das trajetórias formam um triâgulo retângulo, ou seja, um dos vértices (junção das arrestas) formam um ângulo de 90º graus. <br></p>
+            </div>
+
+            <div class="boxRetratil" id="retratil1">
+                <div class="header"><p style="margin-left: 30%;"><strong> Vocês se lembram do teorema de Pitágoras??? CLIQUE!!!</strong>
+                     <span class="toggle-btn">▼</span></p> <!-- <span> é um elemento em linha usado para agrupar elementos em um documento e aplicar estilos a eles. A classe "toggle-btn", será usada para fornecer funcionalidade de alternância (como expandir/contrair o conteúdo).-->
+                </div>
+                <div class="content">
+                    <img id="imgPitagoras" src="./img/Pitagoras.PNG" alt="Pitágoras">
+                </div>
+            </div>
+
+            <div class="boxRetratil" id="retratil2">
+                <div class="header"><strong> 1º Passo. CLIQUE!!!</strong>
+                     <span class="toggle-btn">▼</span>
+                </div>
+                <div style="margin-left: 5%;" class="content">
+                    <img src="./img/Lorentz1.PNG" alt="Lorentz1">
+                </div>
+            </div>
+
+            <div class="boxRetratil" id="retratil3">
+                <div class="header"><strong> 2º Passo. CLIQUE!!!</strong>
+                     <span class="toggle-btn">▼</span>
+                </div>
+                <div style="margin-left: 16%;" class="content">
+                    <img src="./img/Lorentz2.PNG" alt="Lorentz2">
+                </div>
+            </div>
+
+            <div class="boxRetratil" id="retratil4">
+                <div class="header"><strong> 3º Passo. CLIQUE!!!</strong>
+                     <span class="toggle-btn">▼</span>
+                </div>
+                <div style="margin-left: 8%;" class="content">
+                    <img src="./img/Lorentz3.PNG" alt="Lorentz3">
+                </div>
+            </div>
+
+            <div id="explicacaoLorentz">
+                <p style="font-size: 150%; font-family: Mate SC; margin-top: 1%; margin-left: 1%;">Agora, vamos analisar as esquações: <p style="font-size: 80%; font-family: Mate SC;margin-left: 1%;"> <strong>OBS.:</strong> As equações são idênticas. A única diferença é que na primeira isolamos t<sub>1</sub> para encontrar o tempo do Astronauta e na segunda, isolamos t<sub>2</sub> para econtrar o tempo do observador na Terra.</p>
+                </p>
+                <img style="margin-left: 20%;" src="./img/ExpressoesLorentz1e2.png" alt="Lorentz1e2">
+                <p style="font-size: 150%; font-family: Mate SC; margin-top: 1%; margin-left: 1%;">Repare que, quando houver movimento (velocidade), o tempo de quem estiver em movimento será menor em relação a alguém que estiver parado. Uma vez que, estando os dois parados, os tempos serão exatamente iguais. <p style="font-size: 150%; font-family: Mate SC; margin-top: 1%; margin-left: 1%;">Para v = 0, temos,</p>
+                <img style="margin-left: 20%;" src="./img/velocidadeZero.png" alt="velocidadeZero">
+                </p>
+                <p style="text-align: center; font-size: 150%; font-family: Mate SC; margin-top: 1%; margin-left: 1%;">OK! Entendi que o tempo é diferente para pessoas/objetos que estão em movimento. <br> <strong>Mas porque não sentimos essa diferença no dia-a-dia?</strong> </p>
+                <img class="imgEinstein2" src="./img/EinsteinRelatividade.png" alt="EinsteinRelatividade">
+                <p style="font-size: 150%; font-family: Mate SC; margin-top: 1%; margin-left: 1%;">De fato, Einstein está certo. Veja os resultados abaixo para velocidades do nosso dia-a-dia. <br> Lembrando que a <strong>velocidade da luz é de aproximadamente 300.000 km/s ou 1.000.000.000 km/h.</strong></p>
+                <img src="./img/LorentzCaminhada.png" alt="Caminhada">
+                <img src="./img/LorentzF1Aviao.png" alt="F1eAviao">
+                <p style="font-size: 150%; font-family: Mate SC; margin-top: 1%; margin-left: 1%;">Perceba que, apesar dos resultados serem diferentes, ambos são praticamente 1. Portanto, novamente, os tempos de t<sub>1</sub> e t<sub>2</sub> são praticamente iguais.</p>
+                <p style="text-align: center; font-size: 150%; font-family: Mate SC; margin-top: 1%; margin-left: 1%;">As coisas começam a ficar interessantes para velocidades próximas da luz. <br><br><strong>E é aqui que a viagem no tempo se torna possível. </strong></p>
+            </div>
+
+            <div id="ParadoxoGemeos">
+                <h1 style="font-size: 450%; font-family: Mate SC; font-weight: bold; padding: 3%;">PARADOXO DOS GÊMEOS</h1>
+            </div>
+
+            <div id="explicacaoGemeos">
+                <p style="font-size: 150%; font-family: Mate SC; margin-top: 1%; margin-left: 1%;">Imagine dois irmãos gêmeos. Um deles é astronauta e parte para o espaço num fogute a uma velocidade próxima à da luz. Quando o gêmeo astronauta retorna, o irmão na Terra envelheceu mais do que o viajante espacial.</p>
+                <img style="margin-left: 26%;" src="./img/paradoxoGemeos.png" alt="paradoxoGemeos">
+                <p style="font-size: 150%; font-family: Mate SC; margin-top: 1%; margin-left: 1%;">Como vimos, o tempo da pessoa que está em movimento passa mais devagar. Nesse caso, o tempo do irmão que estava no foguete <strong>,viajando a uma velocidade próxima à da luz,</strong> passou bem mais devagar que o tempo do irmão que ficou na terra. Para o astronauta, foi como se tivesse viajado no tempo, ou seja, para o futuro.</p>
+                
+            </div>
+
+            <div class="boxCalculatorFundo">
+                    <p style="font-size: 150%; font-family: Mate SC; margin-top: 1%; margin-left: 1%;">Sinta-se à vontade para experimentar a simulação de dilatação do tempo em nossa Calculadora Temporal. Basta inserir o tempo que o viajante passará fora, e descubra quanto tempo terá transcorrido para quem está aqui na Terra. Divirta-se!</p>
+                <div id="calculator">
+
+                    <h1 style="margin-left: 25%;">Calculadora Temporal</h1>
+
+                    <p>Selecione a unidade de tempo desejada:</p>
+
+                    <div style="display: flex; justify-content: space-around;">
+                        <div>
+                          <ul style="list-style-type: none; padding: 0;">
+                            <li>
+                              <label>
+                                <input type="radio" name="tempo" value="horas"> Horas
+                                <!-- O type "radio" faz com que apenas uma das opções seja marcada. -->
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <ul style="list-style-type: none; padding: 0;">
+                            <li>
+                              <label>
+                                <input type="radio" name="tempo" value="dias"> Dias
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <ul style="list-style-type: none; padding: 0;">
+                            <li>
+                              <label>
+                                <input type="radio" name="tempo" value="anos"> Anos
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+
+                    <div class="input-container">
+                        <div class="input-group">
+                            <p>Por quanto tempo o viajante ficará em movimento?</p>
+                            <input type="number" id="num1" placeholder="Digite o tempo aqui."><span id="unidadeTempo"> </span><br>
+                            <p>Qual a velocidade do viajante?</p>
+                            <input type="number" id="num2" placeholder="Não utilize pontos. (Ex: 285000)"><span>km/s</span><br><br>
+    
+                        </div>
+                    </div>
+                    
+                    <button id="calculatorButton">
+                        Calcular
+                    </button><span><button style="margin-left: 3%;" id="limpar">Limpar</button></span>  
+                    <div class="input-group"><br>
+                        <span>Enquanto o Astronauta viaja por: </span>
+                        <p id="result2">00</p>
+                        <span>Aqui na Terra terão se passado: </span>
+                        <p id="result1">00</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer id="rodape">
+
+        <div class="coluna">Autor: </br>
+            Paulo Henrique do Nascimento</div>
+
+        <div class="coluna"><strong>PÁGINA INICIAL:</strong></br>
+            <p class="cliqueaqui" id="retornoPagina">CLIQUE AQUI</p>
+        </div>
+
+        <div class="coluna">Lattes: </br>
+            <p class="cliqueaqui" id="lattes">Clique aqui</p>
+        </div>
+
+        <div class="coluna">Linkedin: </br>
+            <p class="cliqueaqui" id="linkedin">Clique aqui</p>
+        </div>
+
+        <div class="coluna">GitHub: <br>
+            <p class="cliqueaqui" id="github">Clique aqui</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

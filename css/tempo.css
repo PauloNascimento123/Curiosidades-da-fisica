@@ -1,0 +1,201 @@
+#viagem_no_tempo {
+    display: flexbox; /* flexbox */
+    margin-bottom: 3%;
+}
+
+main .viagem_no_tempo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#tituloTempo {
+    /* border: solid #e20f0f; */
+    top: 2%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 350%;
+    font-family: 'Mate SC';
+    color: rgb(143, 3, 3);
+}
+
+#boxProblematizacao {
+    /* border: solid #e20f0f; */
+    margin-top: 2%;
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    font-size: 200%;
+    line-height: 1.5;
+    font-family: "Mate SC";
+}
+
+#boxRelatividade {
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+    /* border: solid #e20f0f; */
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+#textoRelatividade {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    font-size: 150%;
+    text-align: justify;
+    font-family: "Mate SC";
+    line-height: 2;
+}
+
+#imgEinstein1 {
+    width: 70%;
+    margin-left: 15%;
+    height: auto;
+    object-fit: contain;
+}
+
+#boxLorentz {
+    /* border: solid #29e410; */
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 1%;
+}
+
+.naves {
+    width: 85%;
+    height: auto;
+    object-fit: contain;
+    margin-left: 10%;
+}
+
+.textoLorentz {
+    width: 95%;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 130%;
+    font-family: "Mate SC";
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#textoLorentz1e2 {
+    margin-top: 20%;
+}
+
+.boxRetratil {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+  }
+
+.header {
+    border: solid  rgb(143, 3, 3);
+    background-color: #f9f9f9;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    font-size: 150%;
+    font-family: "Mate SC";
+    margin-top: 1%;
+}
+
+.content { /* Deixar o conteúdo inicialmente invisível.*/
+    display: none;
+}
+
+.open .content {
+    display: block;
+    /*.open .content: Aqui, estamos aplicando um estilo à classe "content", mas apenas quando o elemento que o contém tem a classe "open".
+    display: block;: Isso faz com que o elemento com a classe "content" seja exibido como um bloco. Ou seja, quando o elemento pai tem a classe "open", o conteúdo é mostrado.*/
+}
+
+.open .toggle-btn {
+    transform: rotate(180deg);
+    /*.open .toggle-btn: Da mesma forma, estamos aplicando um estilo à classe "toggle-btn", mas apenas quando o elemento que o contém tem a classe "open".
+    transform: rotate(180deg);: Isso aplica uma transformação de rotação ao elemento com a classe "toggle-btn", girando-o 180 graus. Isso geralmente é usado para criar um efeito visual indicando que o conteúdo está expandido.*/
+}
+
+#imgPitagoras {
+    width: 100%;
+    height: auto;
+}
+
+
+#ParadoxoGemeos {
+    background-image: url('../img/gemeosTitulo.png');
+    width: 100%;
+    height: 150px;
+    color: #f9f9f9;
+    text-align: center;
+    margin-top: 1%;
+}
+
+/* Criar variáveis para serem utilizadas no código. */
+:root { 
+    --color-primary-1: rgb(45, 7, 53);
+    --color-primary-2: rgb(236, 209, 234);
+
+    --color-neutral-1: #e5e7eb;
+    --color-neutral-2: #444444;
+    --color-neutral-3: #262626;
+}
+
+.boxCalculatorFundo {
+    flex-direction: column;
+    /* border: solid #29e410; */
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+    align-content: center;
+    align-items: center;
+    font-family: "Mate SC";
+    background: linear-gradient(5deg, var(--color-primary-1),var(--color-primary-2));
+}
+
+#calculator {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    line-height: 1.8;
+    background-color: var(--color-neutral-3);
+    color: var(--color-neutral-1);
+    box-shadow: 10px 10px 10px rgba(0,0,0,00.323);
+    border-radius: 8px;
+    padding: 20px;
+    width: 40%
+}
+
+.input-group input {
+    width: 55%;
+    background-color: var(--color-neutral-2);
+    color: var(--color-neutral-1);
+    padding: 8px;
+    border: 1px solid var(--color-primary-1);
+    border-radius: 4px;
+}
+
+/* Retirar a borda branca que aparece quando clicamos com o mouse nos inputs. */
+.input-group input:focus-visible {
+    outline: transparent;
+}  
+
+#calculatorButton, #limpar {
+    width: 35%;
+    height: 30px;
+    color: #f9f9f9;
+    font-family: "Mate SC";
+    font-size: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(120deg, var(--color-primary-1), var(--color-primary-2));
+}
+
+

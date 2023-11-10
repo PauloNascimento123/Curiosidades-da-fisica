@@ -1,0 +1,91 @@
+/* Container contendo todos os botões */
+.containerbotoes {
+    z-index: 1;
+    /* border: solid rgb(77, 235, 4); */
+    position: absolute;
+    top: 40%;
+    width: 100%; 
+    height: 50%;
+    display: flex; /* Essa propriedade define o contêiner como um contêiner flexível, 
+                    o que permite que os elementos dentro dele sigam as regras do 
+                    modelo de layout Flexbox */
+    justify-content: space-around; /* faz com que os itens tenham um espaçamento igual ao redor deles */       
+}
+
+.botao {
+    cursor: pointer;
+    max-width: 400px;
+    min-width: 150px;
+    height: 500px;
+    border: none;
+    outline: none; /* Remove o contorno ao focar no botão. */
+    color: #fff; /* Cor do Texto dentro do botão */
+    z-index: 0;
+    border-radius: 10px; /* Cantos arrendondados. */
+    position: relative; /* Adicionamos esta propriedade para referenciar o pseudoelemento ::before */
+}
+
+.botao::before {
+    content: "";
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -11px;
+    left:-11px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(10px); /* Aplica um leve desfoque ao gradiente. */
+    width: calc(100% + 25px); /* Ajusta o tamanho do pseudo-elemento para cobrir toda a área do botão. */
+    height: calc(100% + 25px); /* idem */
+    animation: glowing 20s linear infinite; /* Aplica a animação glowing que faz o efeito de brilho pulsante. */
+    opacity: 0; /*  Define a opacidade inicial do pseudo-elemento como 0. */
+    transition: opacity .3s ease-in-out; /* Adiciona uma transição suave para a opacidade quando o botão é hoverado. */
+    border-radius: 10px;
+}
+
+.botao:active{
+    color: #000; /* Define a cor do texto quando o botão está ativo. */
+}
+
+.botao:active::after {
+    /* Cria um pseudo-elemento após o conteúdo do botão quando o botão está ativo.
+    background: transparent; - Define o fundo do pseudo-elemento como transparente. */
+    background: transparent;
+}
+
+.botao:hover:before {
+    /* Define o estilo do pseudo-elemento antes do conteúdo do botão quando o botão é hoverado.
+    opacity: 1; - Torna o pseudo-elemento visível (opacidade 1) quando o botão é hoverado. */
+    opacity: 1;
+}
+
+.botao:after {
+    /* Cria um pseudo-elemento após o conteúdo do botão.
+    Define um fundo escuro para o botão.
+    background: #111; - Define a cor de fundo como um tom de cinza escuro. */
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(22, 2, 41);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing { /* Esta é a declaração de uma animação chamada "glowing"  */
+    0% { background-position: 0 0; } /* 0%: Define o início da animação, em 0% do progresso.
+    background-position: 0 0;: Esta regra define a posição inicial do plano de fundo. Neste caso, 0 0 significa que a posição do fundo é definida como o início, ou seja, sem deslocamento inicial. */ 
+    50% { background-position: 400% 0; } /* 50%: Define o meio da animação, em 50% do progresso.
+    background-position: 400% 0;: Neste ponto da animação, o plano de fundo é movido para a direita em 400% da largura do elemento e 0% da altura, criando o efeito de deslocamento. */
+    100% { background-position: 0 0; } /* 100%: Define o final da animação, em 100% do progresso.
+
+    background-position: 0 0;: Neste ponto, a animação retorna à posição inicial, criando o efeito de um ciclo. */
+}
+
+.imagembotao {
+    width: 100%;
+    height: 98%;
+    object-fit: cover; /* Faz com que o conteúdo cubra completamente a caixa, mantendo a proporção original. Isso significa que a imagem pode ser cortada para se encaixar na caixa. */
+    opacity: 85%;
+}
