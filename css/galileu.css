@@ -1,16 +1,10 @@
 #boxquem_chega_primeiro {
     display: flexbox; /*flexbox*/
-    margin-bottom: 7%;
-}
-
-main .boxquem_chega_primeiro {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    border: solid rgb(143,3,3);
+    margin-bottom: 3%;
 }
 
 #titulo {
-    /* border: solid #fa0404; */
     top: 2%;
     width: 100%;
     height: auto;
@@ -20,9 +14,8 @@ main .boxquem_chega_primeiro {
     color: rgb(143, 3, 3);
 }
 
-
 #boxIntroducaoQuedaLivre {
-    /* border: solid #000000; */
+    background-color: rgb(200, 150, 150);
     display: flex;
     width: 100%;
     height: auto;
@@ -30,7 +23,6 @@ main .boxquem_chega_primeiro {
 
 #imgGalileu {
     width: 10%;
-    margin-left: 2%;
     height: auto;
     object-fit: contain;
 }
@@ -50,19 +42,16 @@ main .boxquem_chega_primeiro {
 }
 
 #box2 {
-    /* border: solid slateblue; */
     display: grid;
     grid-template-columns: 4fr 1fr;
     width: 100%;
-    height: auto;
-    margin-top: 1%;     
+    height: auto;    
 }
 
 #imgtorre {
     width: 100%;
     height: auto;
     object-fit: contain;
-    right: 3%;
 }
 
 #texto2 {
@@ -74,17 +63,18 @@ main .boxquem_chega_primeiro {
     text-align: justify;
     font-family: 'Mate SC';
     letter-spacing: 1.5;
+    padding: 1%;
 }
 
 #box3 {
-    /* border: solid #f30707; */
+    background-color: rgb(200, 150, 150);
     display: grid;
     grid-template-columns: 1fr 4fr;
     width: 100%;
     height: auto;
 }
 
-#imgNewton {
+#imgNewton2 {
     width: 90%;
     height: auto;
     object-fit: cover;
@@ -97,15 +87,14 @@ main .boxquem_chega_primeiro {
     text-align: justify;
     font-family: 'Mate SC';
     letter-spacing: 1.5;
+    padding: 3% 0% 0% 0%;
 }
 
 #box4 {
-    /* border: solid #f30707; */
     display: grid;
     grid-template-columns: 30% 40% 30%;
     width: 100%;
     height: auto;
-    margin-top: 3%;
 }
 
 #textoNovo {
@@ -116,6 +105,7 @@ main .boxquem_chega_primeiro {
     align-items: center;
     font-family: "Mate SC";
     font-size: 200%;
+    padding: 2%;
 }
 
 #bola {
@@ -131,7 +121,7 @@ main .boxquem_chega_primeiro {
 }
 
 #boxConclusao {
-    /* border: solid #070707; */
+    background-color: rgb(200, 150, 150);
     width: 100%;
     height: auto;
     text-align: center;
@@ -140,17 +130,16 @@ main .boxquem_chega_primeiro {
 #textoConclusao {
     font-family: "Mate SC";
     font-size: 150%;
-    margin: 2% 5% 2% 5%;
+    padding: 2%;
 }
 
 #boxVideo {
     display: flex;
-    /* border: solid #f50505; */
     justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
-    margin-bottom: 2%;
+    padding: 2%;
 }
 
 #video {

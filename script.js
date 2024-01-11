@@ -132,10 +132,6 @@ document.getElementById('limpar').addEventListener('click', () => {
     return;
 })
 
-/* EFEITO DE REVELAÇÃO */
-// window.sr = ScrollReveal({reset: true});
-// sr.reveal('.imgEinstein2', {duration: 3000});
-
 
 /** SELECIONAR AS PÁGINAS */
 document.addEventListener('DOMContentLoaded', function() {

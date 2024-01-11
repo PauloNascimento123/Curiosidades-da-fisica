@@ -1,14 +1,9 @@
 /* Container contendo todos os botões */
 .containerbotoes {
-    z-index: 1;
-    /* border: solid rgb(77, 235, 4); */
-    position: absolute;
-    top: 40%;
+    margin-top: 5%;
     width: 100%; 
     height: 50%;
-    display: flex; /* Essa propriedade define o contêiner como um contêiner flexível, 
-                    o que permite que os elementos dentro dele sigam as regras do 
-                    modelo de layout Flexbox */
+    display: flex; 
     justify-content: space-around; /* faz com que os itens tenham um espaçamento igual ao redor deles */       
 }
 
@@ -23,6 +18,14 @@
     z-index: 0;
     border-radius: 10px; /* Cantos arrendondados. */
     position: relative; /* Adicionamos esta propriedade para referenciar o pseudoelemento ::before */
+    padding: 0% 1% 15% 1%;
+    font-family: "Mate SC";
+    font-size: 350%;
+    text-align: center;
+    line-height: 1; /* Isso remove o espaçamento extra entre as linhas */
+    font-weight: bolder;
+    font-style: italic;
+    text-shadow: 15px 10px 2px rgba(0, 0, 0, 0.986); /* Define a sombra do texto */
 }
 
 .botao::before {
@@ -58,7 +61,7 @@
     opacity: 1;
 }
 
-.botao:after {
+#foton.botao:after {
     /* Cria um pseudo-elemento após o conteúdo do botão.
     Define um fundo escuro para o botão.
     background: #111; - Define a cor de fundo como um tom de cinza escuro. */
@@ -67,7 +70,48 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgb(22, 2, 41);
+    /* background: rgb(22, 2, 41); */
+    background-image: url(../img/foton.png);
+    opacity: 90%;
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+#galileu.botao:after {
+    /* Cria um pseudo-elemento após o conteúdo do botão.
+    Define um fundo escuro para o botão.
+    background: #111; - Define a cor de fundo como um tom de cinza escuro. */
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/galileu.png);
+    opacity: 90%;
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+#tempo.botao:after {
+    /* Cria um pseudo-elemento após o conteúdo do botão.
+    Define um fundo escuro para o botão.
+    background: #111; - Define a cor de fundo como um tom de cinza escuro. */
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: rgb(22, 2, 41); */
+    background-image: url(../img/viagemnotempo.png);
+    opacity: 90%;
+    background-size: cover;
+    background-position: center;
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -81,11 +125,4 @@
     100% { background-position: 0 0; } /* 100%: Define o final da animação, em 100% do progresso.
 
     background-position: 0 0;: Neste ponto, a animação retorna à posição inicial, criando o efeito de um ciclo. */
-}
-
-.imagembotao {
-    width: 100%;
-    height: 98%;
-    object-fit: cover; /* Faz com que o conteúdo cubra completamente a caixa, mantendo a proporção original. Isso significa que a imagem pode ser cortada para se encaixar na caixa. */
-    opacity: 85%;
 }

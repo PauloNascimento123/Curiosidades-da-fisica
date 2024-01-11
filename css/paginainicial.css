@@ -1,10 +1,9 @@
 #pagina_inicial {
     border: solid #ccff00;
-    /* display: block;  block */
-    position: relative;
+    background-image: url(../img/fundoprincipal.png);
+    background-repeat: no-repeat; 
     width: 100%;
-    height: 1200px;   
-    margin-bottom: 2%;  
+    min-height: 1100px;   
 }
 
 #fundoInicial {
@@ -17,32 +16,28 @@
 }
 
 #tituloinicial {
-    position: absolute;
-    /* border: solid; */
     width: 100%;
-    top: 3%;
-    z-index: 1;
+    margin-top: 2%;
     text-align: center;
     font-family: "Mate SC";
     font-size: 350%;
     font-weight: calc(50%);
-    color: rgb(143, 3, 3);
+    color: rgb(93, 219, 20);
 }
 
 #boxintroducao {
-    position: absolute;
-    display: inline-block;
-    z-index: 1;
     border: 10px solid transparent;
     border-image: linear-gradient(45deg, #ffcc00, #ff00cc, #00ccff, #ccff00);
     border-image-slice: 1;
     width: 85%;
     height: 19%;
-    margin-top: 8%;
+    margin-top: 3%;
     margin-left: 8%;
     margin-right: 8%;
     background-color: rgb(31, 0, 31);
     opacity: calc(85%);
+    font-size: 250%;
+    color: aliceblue;
 }
 
 
@@ -54,43 +49,3 @@
       opacity: 1;
     }
 }
-
-#introducao {
-    position: absolute;
-    z-index: 1;
-    color: azure;
-    font-size: 200%;
-    text-align: justify; 
-    padding: 1%;
-}
-
-.pergunta {
-    position: absolute;
-    width: 90%;
-    height: auto;
-    padding: 1%;
-    margin-left: 5%;
-    font-family: "Mate SC";
-    font-size: 350%;
-    font-weight: bolder;
-    font-style: italic;
-    text-shadow: 15px 10px 2px rgba(0, 0, 0, 0.986); /* Define a sombra do texto */
-    z-index: 1;
-}
-
-.perguntameio {
-    position: absolute;
-    margin-top: 15%;
-    width: 90%;
-    height: auto;
-    padding: 1%;
-    font-family: "Mate SC";
-    font-size: 350%;
-    font-weight: bolder;
-    font-style: italic;
-    color: rgb(3, 0, 0);
-    z-index: 1;
-}
-
-
-  

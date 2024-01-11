@@ -10,7 +10,7 @@ body {
 main::after {
     content: ""; /* Esvazia o conteúdo da TAG main. */
     position: flex; /* Define a posição do pseudo-elemento como fixa. Isso siginifica que o elemento será posicionado em relação à janela do navegador, e não ao elemento pai. */
-    height: 100%; /* Define a altura mínima do pseudo-elemento como 100% da altura da janela visível (vh significa "viewport height"). Isso fará com que o pseudo-elemento tenha pelo menos a altura da tela do dispositivo. */
+    height: auto; /* Define a altura mínima do pseudo-elemento como 100% da altura da janela visível (vh significa "viewport height"). Isso fará com que o pseudo-elemento tenha pelo menos a altura da tela do dispositivo. */
     width: 100%; 
     top: 0;
     left: 0;
@@ -25,10 +25,10 @@ footer {
     border: solid rgb(143,3,3);
     background-color: rgb(21, 1, 26);
     color: #fffffe;
-    min-height: 4vh;
+    min-height: 6vh;
     width: 100%;
-    padding: 1%;
     z-index: 1;
+    padding: 1%;
 }
 
 .coluna {
