@@ -1,9 +1,11 @@
 body {
     background-color: none;
     min-width: 1700px;
+    max-width: 100%;
     height: auto; 
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    
 }
 
 /* Cria um pseudo-elemento que será inserido após o conteúdo do elemento main. */
