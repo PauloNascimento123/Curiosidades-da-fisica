@@ -24,12 +24,12 @@
     border-image-slice: 1;
     width: 85%;
     height: 19%;
-    margin-top: 3%;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin: 3% 8% 0% 8%;
     background-color: rgb(31, 0, 31);
     opacity: calc(85%);
     font-size: 250%;
+    text-align: justify;
+    padding: 1%;
     color: aliceblue;
 }
 
