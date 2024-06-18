@@ -1,17 +1,3 @@
-// Array contendo objetos com os links e suas URLs correspondentes
-const links = [
-    { element: document.getElementById('lattes'), url: 'http://lattes.cnpq.br/3585506331737815' },
-    { element: document.getElementById('linkedin'), url: 'https://www.linkedin.com/in/paulo-henrique-do-nascimento-095318292/' },
-    { element: document.getElementById('github'), url: 'https://github.com/PauloNascimento123' }
-];
-
-// Adiciona os event listeners usando um loop
-for (const link of links) {
-    link.element.addEventListener('click', function() {
-        window.location.href = link.url;
-    });
-}
-
 /* Efeito de expansão. */
 document.querySelectorAll('.header').forEach(header => {
     header.addEventListener('click', () => {

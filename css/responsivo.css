@@ -1,0 +1,9 @@
+@media screen and (max-width: 769px) and (max-height: 480px) and (orientation: landscape) {
+    /* Estilos para telas em orientação horizontal */
+    #pagina_inicial {
+        margin-bottom: 0%;
+    }
+}
+
+/* Verificar como usar o responivo junto com o simulador do navegador.  */
+

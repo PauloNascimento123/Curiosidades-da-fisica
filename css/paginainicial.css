@@ -3,6 +3,17 @@
     background-image: url(../img/fundoprincipal.png);
     background-repeat: no-repeat; 
     background-size: cover;
+    /* display: block;  block */
+    position: relative;
+    width: 100%;
+    height: auto;   
+    margin-bottom: 2%;  
+}
+
+#fundoInicial {
+    filter: grayscale(50%); /* Reduz a saturação da imagem. */
+    opacity: 80%;
+    background-size: conver;
     width: 100%;
     height: auto;
     padding-bottom: 10%;  

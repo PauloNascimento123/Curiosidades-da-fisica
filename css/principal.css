@@ -23,7 +23,7 @@ footer {
     bottom: 0;
     left: 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Cria quatro colunas iguais */
+    grid-template-columns: repeat(4, 1fr); /* Cria quatro colunas iguais */
     border: solid rgb(143,3,3);
     background-color: rgb(21, 1, 26);
     color: #fffffe;
@@ -31,6 +31,8 @@ footer {
     width: 100%;
     z-index: 1;
     padding: 1%;
+    justify-items: center;
+    align-items: center;
 }
 
 .coluna {
